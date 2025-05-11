@@ -99,7 +99,7 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/ia.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/ia.png);
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -222,7 +222,7 @@ nav ul li a:hover {
 /* Seção de Depoimentos */
 .testimonials {
     padding: 80px 0;
-    background-image: url(img/rio.png);
+    background-image: url(/img/rio.png);
     color: white;
     background-size: cover;
     background-position: center;
