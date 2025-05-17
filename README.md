@@ -1,11 +1,13 @@
 # 🌿 Projeto Web: Impactando o Desenvolvimento Amazônico
 
 ## 📝 Descrição  
-Este projeto acadêmico tem como objetivo promover a inclusão social e o desenvolvimento sustentável na região amazônica através de uma aplicação web. O site utiliza conceitos básicos de HTML e CSS para criar uma plataforma informativa e interativa.
+Este projeto acadêmico tem como objetivo promover a inclusão social e o desenvolvimento sustentável na região amazônica através de uma aplicação web. O site utiliza conceitos básicos de HTML,CSS e Javascript para criar uma plataforma informativa e interativa.
 
 ## 🛠 Tecnologias Utilizadas  
 - **HTML5**  
-- **CSS3**  
+- **CSS3** 
+- **JavaScript** 
+
 
 ## 💡 Conceitos Básicos Aplicados  
 
