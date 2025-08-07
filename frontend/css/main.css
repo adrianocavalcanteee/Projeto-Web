@@ -37,7 +37,7 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 700;
     color: #356b37;
     text-decoration: none;
@@ -68,7 +68,7 @@ nav ul li a:hover {
 }
 
 .cta-button {
-    background-color:  #f4bd4f;
+    background-color: #f4bd4f;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -81,91 +81,7 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Hero da Página de Passeios */
-.tours-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/floresta-amazonica.png);
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    color: white;
-    text-align: center;
-    margin-top: 70px;
-    
-}
-
-.tours-hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.tours-hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
-
-/* Filtros de Passeios */
-.tour-filters {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin: -50px auto 50px;
-    position: relative;
-    z-index: 100;
-    max-width: 1200px;
-}
-
-.filter-row {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.filter-group {
-    flex: 1;
-}
-
-.filter-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #555;
-}
-
-.filter-group select,
-.filter-group input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.filter-button {
-    background-color: #FF9800;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.filter-button:hover {
-    background-color: #e68a00;
-}
-
-/* Seção de Passeios */
-.tours-section {
-    padding: 60px 0;
-    background-color: #f8f8f8;
-}
-
+/* Seção Hero */
 .section-title {
     text-align: center;
     margin-bottom: 50px;
@@ -181,6 +97,68 @@ nav ul li a:hover {
     color: #666;
     max-width: 700px;
     margin: 0 auto;
+}
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/frontend/img/ia.png);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(49, 49, 47),
+    0 0 0.2em rgb(49, 49, 47);
+    color: white;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: white;
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.secondary-button:hover {
+    background-color: white;
+    color: #333;
+}
+
+
+/* Seção de Passeios */
+.tours {
+    padding: 80px 0;
+    background-color: #f8f8f8;
 }
 
 .tours-grid {
@@ -204,7 +182,6 @@ nav ul li a:hover {
 .tour-image {
     height: 250px;
     overflow: hidden;
-    position: relative;
 }
 
 .tour-image img {
@@ -212,18 +189,6 @@ nav ul li a:hover {
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s;
-}
-
-.tour-badge {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: #FF9800;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-size: 14px;
-    font-weight: 600;
 }
 
 .tour-card:hover .tour-image img {
@@ -248,47 +213,94 @@ nav ul li a:hover {
     font-size: 14px;
 }
 
-.tour-price {
-    font-size: 20px;
-    font-weight: 700;
-    color: #4CAF50;
-    margin-bottom: 15px;
-}
-
 .tour-description {
     color: #666;
     margin-bottom: 20px;
     text-align: justify;
 }
 
-.tour-rating {
-    color: #FF9800;
-    margin-bottom: 15px;
+/* Seção de Depoimentos */
+.testimonials {
+    padding: 80px 0;
+    background-image: url(/frontend/img/rio.png);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
 }
 
-/* Paginação */
-.pagination {
+.testimonials .section-title h2,
+.testimonials .section-title p {
+    color: rgb(247, 247, 247);
+    text-align: center;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(49, 49, 47),
+    0 0 0.2em rgb(49, 49, 47);
+    color: white;
+  
+}
+
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+}
+
+.testimonial-quote {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-author {
     display: flex;
-    justify-content: center;
-    margin-top: 50px;
+    align-items: center;
+}
+.button-testimonials{
+    background-color: #f4bd4f;
+    color: white;
+    
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+.button-testimonials:hover{
+    background-color: #3e8e41;
+    color: white;
+}
+
+
+/* Seção de Newsletter */
+.newsletter {
+    padding: 80px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.newsletter-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
     gap: 10px;
 }
 
-.page-link {
-    display: inline-block;
-    padding: 10px 15px;
+.newsletter-form input {
+    flex: 1;
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    color: #333;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.page-link:hover,
-.page-link.active {
-    background-color:  #f4bd4f;
-    color: white;
-    border-color: #a3af4c;
+    font-size: 16px;
 }
 
 /* Rodapé */
@@ -326,7 +338,7 @@ footer {
 }
 
 .footer-column ul li a:hover {
-    color: #4CAF50;
+    color: #f4bd4f;
 }
 
 .social-links {
@@ -471,7 +483,7 @@ footer {
     text-decoration: underline;
   }
 
-/* Responsivo */
+/* Estilos Responsivos */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -486,17 +498,21 @@ footer {
         margin-left: 15px;
     }
 
-    .tours-hero h1 {
+    .hero h1 {
         font-size: 36px;
     }
 
-    .filter-row {
-        flex-direction: column;
-        gap: 15px;
+    .hero p {
+        font-size: 18px;
     }
 
-    .tours-grid {
-        grid-template-columns: 1fr;
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
     }
 }
 
@@ -510,7 +526,8 @@ footer {
         margin: 5px 0;
     }
 
-    .tours-hero h1 {
+    .hero h1 {
         font-size: 28px;
     }
 }
+

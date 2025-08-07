@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JungleTour</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="/css/passeio_info.css">
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/frontend/css/passeio_info.css">
+    <script src="/frontend/js/script.js"></script>
     <style>
         .tour-detail-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/passeio_indio.webp);
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/frontend/img/cachoeira.jpg);
             background-size: cover;
             background-position: center;
             height: 60vh;
@@ -23,13 +23,13 @@
     <!-- Cabeçalho -->
     <header>
         <div class="container header-container">
-            <a href="index.html" class="logo">Jungle<span>Tour</span></a>
+            <a href="/frontend/index.html" class="logo">Jungle<span>Tour</span></a>
             <nav>
                 <ul>
-                    <li><a href="/index.html">Início</a></li>
-                    <li><a href="/passeios/index.html">Passeios</a></li>
-                    <li><a href="/sobre.html">Sobre</a></li>
-                    <li><a href="/contato.html">Contato</a></li>
+                    <li><a href="/frontend/index.html">Início</a></li>
+                    <li><a href="/frontend/passeios/index.html" >Passeios</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
                     <li><a href="#" class="cta-button" id="loginButton">Login</a></li>
                 </ul>
             </nav>
@@ -49,7 +49,7 @@
         <div class="tour-hero-content container">
             <div class="tour-title-container">
                 <div class="tour-title">
-                    <h1>Inesquecivel Excursão à aldeia indígena</h1>
+                    <h1>Conheça as cachoeiras de Presidente Figueiredo</h1>
                     <div class="tour-location">
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Amazônia, Brasil</span>
@@ -68,7 +68,7 @@
                 <div class="provider-card">
                     <div class="provider-header">
                         <div class="provider-logo">
-                            <img src="/img/amazonecotours logo.png" alt="Amazon EcoTours">
+                            <img src="/frontend/img/amazonecotours logo.png" alt="Amazon EcoTours">
                         </div>
                         <div class="provider-info">
                             <div class="provider-name">Amazon EcoTours</div>
@@ -97,6 +97,7 @@
                                 <i class="fas fa-check feature-icon"></i>
                                 <span>Guias especializados em inglês e português</span>
                             </div>
+                            <br>
                             <div class="feature-item">
                                 <i class="fas fa-check feature-icon"></i>
                                 <span>Grupos pequenos (máx. 12 pessoas)</span>
@@ -110,7 +111,7 @@
                 <div class="provider-card">
                     <div class="provider-header">
                         <div class="provider-logo">
-                            <img src="/img/selvaadventures.png" alt="Selva Adventures">
+                            <img src="/frontend/img/selvaadventures.png" alt="Selva Adventures">
                         </div>
                         <div class="provider-info">
                             <div class="provider-name">Selva Adventures</div>
@@ -131,17 +132,19 @@
                                 <div class="price-per">por pessoa</div>
                             </div>
                             <div>
-                                <i class="fas fa-clock"></i> 1 dia
+                                <i class="fas fa-clock"></i> 2 dia
                             </div>
                         </div>
                         <div class="provider-features">
                             <div class="feature-item">
                                 <i class="fas fa-check feature-icon"></i>
-                                <span>Foco em observação da cultura dos povos indígenas </span>
+                                <span>Grupos pequenos (máx. 8 pessoas)</span>
                             </div>
+                            <br>
+                            <br>
                             <div class="feature-item">
                                 <i class="fas fa-check feature-icon"></i>
-                                <span>Inclui grafismo indígena </span>
+                                <span>Inclui passeio na trilha. </span>
                             </div>
                         </div>
                         <a href="#" class="book-now-btn">Reservar com este provedor</a>
@@ -152,7 +155,7 @@
                 <div class="provider-card">
                     <div class="provider-header">
                         <div class="provider-logo">
-                            <img src="/img/florestalogo.png" alt="Floresta Expeditions">
+                            <img src="/frontend/img/florestalogo.png" alt="Floresta Expeditions">
                         </div>
                         <div class="provider-info">
                             <div class="provider-name">Floresta Expeditions</div>
@@ -169,11 +172,11 @@
                     <div class="provider-details">
                         <div class="price-section">
                             <div>
-                                <div class="price-amount">R$ 175.00</div>
+                                <div class="price-amount">R$ 200.00</div>
                                 <div class="price-per">por pessoa</div>
                             </div>
                             <div>
-                                <i class="fas fa-clock"></i> 1 dia
+                                <i class="fas fa-clock"></i> 3 dias
                             </div>
                         </div>
                         <div class="provider-features">
@@ -184,7 +187,8 @@
                         
                             <div class="feature-item">
                                 <i class="fas fa-check feature-icon"></i>
-                                <span>Grupos pequenos (máx. 8 pessoas)</span>
+                                <span> Cobertura total da alimentação/transporte.</span>
+                            
                             </div>
                         </div>
                         <a href="#" class="book-now-btn">Reservar com este provedor</a>
@@ -203,7 +207,7 @@
                 <section class="tour-section">
                     <h2 class="section-title">Sobre o Passeio</h2>
                     <div class="tour-description">
-                        <p>Descubra o coração da Amazônia em uma visita emocionante a uma tribo indígena local. Conecte-se com culturas ancestrais, aprenda sobre seus costumes, e participe de rituais tradicionais. Vivencie o artesanato único, histórias fascinantes e a hospitalidade calorosa desses povos da floresta. Uma experiência autêntica que respeita suas tradições e leva você além do turismo convencional. Mergulhe nesta aventura cultural e leve memórias inesquecíveis para toda a vida.</p>
+                        <p>Descubra quedas d'água cristalinas escondidas no coração da Amazônia. Banhe-se em piscinas naturais cercadas por floresta virgem, perfeitas para relaxar e se reconectar com a natureza. Aventure-se por trilhas suaves que levam a cenários deslumbrantes, onde o som das cascatas e o canto dos pássaros criam a trilha sonora perfeita. Uma experiência refrescante e inesquecível no meio da selva amazônica.</p>
                         
                     </div>
 
@@ -313,10 +317,10 @@
                 <div class="footer-column">
                     <h3>Links Rápidos</h3>
                     <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="/passeios/index.html">Passeios</a></li>
-                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="/frontend/index.html">Início</a></li>
+                        <li><a href="/frontend/sobre.html">Sobre Nós</a></li>
+                        <li><a href="/frontend/passeios/passeios.html">Passeios</a></li>
+                        <li><a href="/frontend/contato.html">Contato</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">

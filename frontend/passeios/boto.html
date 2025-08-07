@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JungleTour</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="/css/passeio_info.css">
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/frontend/css/passeio_info.css">
+    <script src="/frontend/js/script.js"></script>
+
     <style>
-        .tour-detail-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/museus.jpg);
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
-            display: flex;
-            align-items: flex-end;
-            color: white;
-        }
+    .tour-detail-hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/frontend/img/passeio_boto.png);
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        display: flex;
+        align-items: flex-end;
+        color: white;
+    }
     </style>
 </head>
 <body>
@@ -26,10 +27,10 @@
             <a href="/index.html" class="logo">Jungle<span>Tour</span></a>
             <nav>
                 <ul>
-                    <li><a href="/index.html">Início</a></li>
-                    <li><a href="/passeios/index.html">Passeios</a></li>
-                    <li><a href="/sobre.html">Sobre</a></li>
-                    <li><a href="/contato.html">Contato</a></li>
+                    <li><a href="/frontend/index.html">Início</a></li>
+                    <li><a href="/frontend/passeios/index.html">Passeios</a></li>
+                    <li><a href="/frontend/sobre.html">Sobre</a></li>
+                    <li><a href="/frontend/contato.html">Contato</a></li>
                     <li><a href="#" class="cta-button" id="loginButton">Login</a></li>
                 </ul>
             </nav>
@@ -49,7 +50,7 @@
         <div class="tour-hero-content container">
             <div class="tour-title-container">
                 <div class="tour-title">
-                    <h1>Museus: MUSA e INPA com vista a torre de observação</h1>
+                    <h1>Aventura na Amazônia</h1>
                     <div class="tour-location">
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Amazônia, Brasil</span>
@@ -68,7 +69,7 @@
                 <div class="provider-card">
                     <div class="provider-header">
                         <div class="provider-logo">
-                            <img src="/img/amazonecotours logo.png" alt="Amazon EcoTours">
+                            <img src="/frontend/img/amazonecotours logo.png" alt="Amazon EcoTours">
                         </div>
                         <div class="provider-info">
                             <div class="provider-name">Amazon EcoTours</div>
@@ -85,17 +86,21 @@
                     <div class="provider-details">
                         <div class="price-section">
                             <div>
-                                <div class="price-amount">R$ 25.00</div>
+                                <div class="price-amount">R$ 150.00</div>
                                 <div class="price-per">por pessoa</div>
                             </div>
                             <div>
-                                <i class="fas fa-clock"></i> 1 dia
+                                <i class="fas fa-clock"></i> 2 dias
                             </div>
                         </div>
                         <div class="provider-features">
                             <div class="feature-item">
                                 <i class="fas fa-check feature-icon"></i>
                                 <span>Guias especializados em inglês e português</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Ecolodge sustentável + acampamento</span>
                             </div>
                             <div class="feature-item">
                                 <i class="fas fa-check feature-icon"></i>
@@ -110,7 +115,7 @@
                 <div class="provider-card">
                     <div class="provider-header">
                         <div class="provider-logo">
-                            <img src="/img/selvaadventures.png" alt="Selva Adventures">
+                            <img src="/frontend/img/selvaadventures.png" alt="Selva Adventures">
                         </div>
                         <div class="provider-info">
                             <div class="provider-name">Selva Adventures</div>
@@ -127,7 +132,7 @@
                     <div class="provider-details">
                         <div class="price-section">
                             <div>
-                                <div class="price-amount">R$ 30.00</div>
+                                <div class="price-amount">R$ 100.00</div>
                                 <div class="price-per">por pessoa</div>
                             </div>
                             <div>
@@ -137,11 +142,15 @@
                         <div class="provider-features">
                             <div class="feature-item">
                                 <i class="fas fa-check feature-icon"></i>
-                                <span>Foco em observação da história de Manaus </span>
+                                <span>Foco em observação de vida selvagem</span>
                             </div>
                             <div class="feature-item">
                                 <i class="fas fa-check feature-icon"></i>
-                                <span>Inclui entrada nos pontos turísticos </span>
+                                <span>Ecolodge premium com piscina natural</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Inclui passeio de canoa tradicional</span>
                             </div>
                         </div>
                         <a href="#" class="book-now-btn">Reservar com este provedor</a>
@@ -152,7 +161,7 @@
                 <div class="provider-card">
                     <div class="provider-header">
                         <div class="provider-logo">
-                            <img src="/img/florestalogo.png" alt="Floresta Expeditions">
+                            <img src="/frontend/img/florestalogo.png" alt="Floresta Expeditions">
                         </div>
                         <div class="provider-info">
                             <div class="provider-name">Floresta Expeditions</div>
@@ -169,19 +178,22 @@
                     <div class="provider-details">
                         <div class="price-section">
                             <div>
-                                <div class="price-amount">R$ 50.00</div>
+                                <div class="price-amount">R$ 175.00</div>
                                 <div class="price-per">por pessoa</div>
                             </div>
                             <div>
-                                <i class="fas fa-clock"></i> 1 dia
+                                <i class="fas fa-clock"></i> 2 dias
                             </div>
                         </div>
                         <div class="provider-features">
                             <div class="feature-item">
                                 <i class="fas fa-check feature-icon"></i>
-                                <span>Expedição premium com guias especializados</span>
+                                <span>Expedição premium com guias biólogos</span>
                             </div>
-                        
+                            <div class="feature-item">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Visita a comunidade indígena local</span>
+                            </div>
                             <div class="feature-item">
                                 <i class="fas fa-check feature-icon"></i>
                                 <span>Grupos pequenos (máx. 8 pessoas)</span>
@@ -203,8 +215,8 @@
                 <section class="tour-section">
                     <h2 class="section-title">Sobre o Passeio</h2>
                     <div class="tour-description">
-                        <p>Explore o MUSA e o INPA em Manaus e mergulhe na Amazônia com trilhas incríveis e uma torre de observação única! Descubra o viveiro de borboletas e conecte-se com a natureza de forma inesquecível! Aprenda sobre biodiversidade de maneira interativa e divertida para todas as idades! Leve sua família e amigos para viver essa experiência única na floresta! Com ingressos acessíveis, essa aventura está ao seu alcance! Agende agora seu passeio e crie memórias na maior floresta do mundo!</p>
-                        
+                        <p>Viva uma experiência única nadando com os encantadores botos-cor-de-rosa na Amazônia! Embarque em um passeio inesquecível pelos rios cercados pela floresta exuberante, onde esses animais mágicos surgem para encantar adultos e crianças. </p>
+                        <p>Com toda a segurança e acompanhamento de guias experientes, você poderá interagir de perto com os botos e conhecer lendas fascinantes da cultura local. Prepare-se para momentos de pura emoção e conexão com a natureza. Venha viver essa aventura e leve para casa lembranças que durarão para sempre! Reserve já seu passeio!</p>
                     </div>
 
                     <!-- Processo de Intermediação -->
@@ -313,10 +325,10 @@
                 <div class="footer-column">
                     <h3>Links Rápidos</h3>
                     <ul>
-                        <li><a href="/index.html">Início</a></li>
-                        <li><a href="/sobre.html">Sobre Nós</a></li>
-                        <li><a href="/passeios/index.html">Passeios</a></li>
-                        <li><a href="/contato.html">Contato</a></li>
+                        <li><a href="/frontend/index.html">Início</a></li>
+                        <li><a href="/frontend/sobre.html">Sobre Nós</a></li>
+                        <li><a href="/frontend/passeios/passeios.html">Passeios</a></li>
+                        <li><a href="/frontend/contato.html">Contato</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
