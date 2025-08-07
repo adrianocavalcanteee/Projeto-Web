@@ -5,8 +5,13 @@ Este projeto acadêmico tem como objetivo promover a inclusão social e o desenv
 
 ## 🛠 Tecnologias Utilizadas  
 - **HTML5**  
+
 - **CSS3** 
 - **JavaScript** 
+
+=======
+- **CSS3**
+- **JavaScript**
 
 
 ## 💡 Conceitos Básicos Aplicados  
